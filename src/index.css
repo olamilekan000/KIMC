@@ -7,14 +7,8 @@
   overflow: hidden !important;
 }*/
 
-#root > div {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 /*body > #root{
@@ -22,21 +16,10 @@ main {
 }*/
 
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-#carText{
-  position: fixed;
-  margin-top: -80px;
-  color: #ffffff;
-}
-
-#Logo{
-  width: 30%;
-  margin-top: 10px;
-  /*border-radius: 35%;*/
-}
 
 h3, h6{
   font-family: Helvetica;
@@ -56,8 +39,31 @@ img{
   padding: 20px;
 }
 
-.slider-content{
-  width: 100%;
+.track{
+  min-height: 500px;
+}
+
+.contents{
+  margin-top: 8%;
+}
+
+
+#carText{
+  position: fixed;
+  margin-top: -80px;
+  color: #ffffff;
+}
+
+#Logo{
+  width: 30%;
+  margin-top: 10px;
+  /*border-radius: 35%;*/
+}
+
+#root > div {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 768px){
