@@ -55,7 +55,7 @@ class AutoPlay extends Component {
 							<div className="container">
 								<h1>{item.title}</h1>
 								<p>{item.description}</p>
-								<button className="btn">{item.button}</button>
+								<button className="btn-large red darken-3">{item.button}</button>
 							</div>
 						</div>
 					))}
