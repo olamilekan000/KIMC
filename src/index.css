@@ -1,0 +1,68 @@
+/*body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}*/
+/*html, body{
+  overflow: hidden !important;
+}*/
+
+#root > div {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+    flex: 1 0 auto;
+}
+
+/*body > #root{
+  height: 100vh !important;
+}*/
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#carText{
+  position: fixed;
+  margin-top: -80px;
+  color: #ffffff;
+}
+
+#Logo{
+  width: 30%;
+  margin-top: 10px;
+  /*border-radius: 35%;*/
+}
+
+h3, h6{
+  font-family: Helvetica;
+}
+
+img{
+  /*width: 100%;*/
+  min-height: 20%;
+}
+
+.container{
+  width: 90% !important;
+}
+
+.welcome{
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.slider-content{
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px){
+  #fbPic{
+    width: 345px;
+    height: 196px;
+  }
+}
