@@ -47,6 +47,16 @@ img{
   margin-top: 8%;
 }
 
+.coyDescr{
+  padding: 20px;
+}
+
+/*.breadWrapper{
+  background-color: red;
+  padding: 10px;
+  margin-top: 10px;
+  color: black;
+}*/
 
 #carText{
   position: fixed;
@@ -60,10 +70,18 @@ img{
   /*border-radius: 35%;*/
 }
 
+#taxItems{
+  padding:10px;
+}
+
 #root > div {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+
+#serviceBtn{
+  margin: 20px;
 }
 
 @media only screen and (max-width: 768px){

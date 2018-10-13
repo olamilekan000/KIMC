@@ -1,19 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Card = ({card}) => {
 	console.log(card)
 	const cards = card.map(card => {
 		return(
-			<div className="col s12 m4 l4" key={ card.id }>
+			<div className="col s12 m3 l3" key={ card.id }>
 				<div>
 				  <div className="card">
 				    <div className="card-image">
 				      <img src={card.img} />
-				      <a className="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">add</i></a>
 				    </div>
 				    <div className="card-content">
 				    	<span className="card-title">{card.cardTitle}</span>
 				    	<p>{ card.text }</p>
+					    <div id="serviceBtn">
+					    	<Link to={ card.link }><button className="btn red darken-3">Read More</button></Link>
+					    </div>
 				    </div>
 				  </div>
 				</div>
