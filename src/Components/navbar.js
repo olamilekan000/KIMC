@@ -1,29 +1,37 @@
 import React from 'react';
 import { NavLink} from "react-router-dom";
-import KIMC from '../imgs/kimc2.jpeg'
 
 const NavBar = () => {
 	return (
 		<header>
+		<ul id="dropdown1" className="dropdown-content">
+		  <li><NavLink to="/">Careers</NavLink></li>
+		  <li><NavLink to="/">Bashorun & Co.</NavLink></li>
+		  <li className="divider"></li>
+		  <li><NavLink to="/signIn">Log-in</NavLink></li>
+		</ul>		
 		<nav>
 			<div className="nav-wrapper red darken-3">
 				<div className="container">
-				  <a className="brand-logo"><img src={KIMC} id="Logo"/></a>
+				  <a className="brand-logo">KIMC</a>
 				  <a data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
 				  <ul className="right hide-on-med-and-down">
-				    <li><NavLink to="/">Home</NavLink></li>
+				    <li><NavLink to="/home">Home</NavLink></li>
 				    <li><NavLink to="/about">About</NavLink></li>
 				    <li><NavLink to="/services">Services</NavLink></li>
 				    <li><NavLink to="/contact">Contact</NavLink></li>
+				    <li><NavLink to="/Articles">Articles</NavLink></li>
+				    <li><NavLink className="dropdown-trigger" to="/Articles" data-target="dropdown1">Press & News<i className="material-icons right">arrow_drop_down</i></NavLink></li>
 				  </ul>
 				</div>
 			</div>	    
 		</nav>		
 		<ul className="sidenav" id="mobile-demo">
-		    <li><NavLink to="/">Home</NavLink></li>
+		    <li><NavLink to="/home">Home</NavLink></li>
 		    <li><NavLink to="/about">About</NavLink></li>
 		    <li><NavLink to="/services">Services</NavLink></li>
 		    <li><NavLink to="/contact">Contact</NavLink></li>
+		    <li><NavLink to="/Articles">Articles</NavLink></li>
 		</ul>			
 		</header>
 	)

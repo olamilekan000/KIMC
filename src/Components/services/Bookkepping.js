@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import BackTax from '../../imgs/BackTax.jpg'
 
-class Bookkeping extends Component{
+class Accounting extends Component{
 	state = {
 
 		topic:{
-			Topic: 'Business and Personal Taxes',
+			Topic: 'Accounting',
 			Desc: `We are your income tax people. Not only can we help you in the preparation and filing of a variety of tax returns and forms,
 					but we have the know-how and experience to ensure you keep the most money in your pocket. Contact us today for a quote`
 		},
@@ -44,30 +46,36 @@ class Bookkeping extends Component{
 			)
 		})
 		return (
-			<div className="container">
-				<div className="breadWrapper">
-			      <div className="col s12">
-			        <a href="#!" className="breadcrumb">First</a>
-			        <a href="#!" className="breadcrumb">Second</a>
-			        <a href="#!" className="breadcrumb">Third</a>
-			      </div>					
-				</div>
-		      <div className="row">
-		      	<div className="col s12 m8 l8">
-		      		<div>
-			      		<h3>{ this.state.topic.Topic }</h3>
-			      		<p>{ this.state.topic.Desc }</p>		      			
-		      		</div>
-		      	</div>
-		      	<div className="col s12 m8 l8">
-		      		<div>
-		      			{ items }
-		      		</div>
-		      	</div>		      	
-		      </div>				
+			<div>
+				<div id="servImg">
+					<h2 className="center imgTitleAcct">Accounting</h2>
+					<nav className="servNav nav-wrapper red darken-3">
+						<div className="breadWrapper container">
+					      <div className="col s12">
+					        <Link to="/" className="breadcrumb">Home</Link>
+					        <Link to="/Bookkeeping" className="breadcrumb">Accounting</Link>
+					      </div>					
+						</div>						
+					</nav>					
+				</div>			
+				<div className="container">
+			      <div className="row">
+			      	<div className="col s12 m8 l8">
+			      		<div>
+				      		<h3>{ this.state.topic.Topic }</h3>
+				      		<p>{ this.state.topic.Desc }</p>		      			
+			      		</div>
+			      	</div>
+			      	<div className="col s12 m8 l8">
+			      		<div>
+			      			{ items }
+			      		</div>
+			      	</div>		      	
+			      </div>							
+				</div>			
 			</div>
 		)
 	}
 }
 
-export default Bookkeping
+export default Accounting

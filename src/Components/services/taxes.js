@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import BackTax from '../../imgs/BackTax.jpg'
 
 class Taxes extends Component{
 	state = {
@@ -44,27 +46,33 @@ class Taxes extends Component{
 			)
 		})
 		return (
-			<div className="container">
-				<div className="breadWrapper">
-			      <div className="col s12">
-			        <a href="#!" className="breadcrumb">First</a>
-			        <a href="#!" className="breadcrumb">Second</a>
-			        <a href="#!" className="breadcrumb">Third</a>
-			      </div>					
-				</div>
-		      <div className="row">
-		      	<div className="col s12 m8 l8">
-		      		<div>
-			      		<h3>{ this.state.topic.Topic }</h3>
-			      		<p>{ this.state.topic.Desc }</p>		      			
-		      		</div>
-		      	</div>
-		      	<div className="col s12 m8 l8">
-		      		<div>
-		      			{ items }
-		      		</div>
-		      	</div>		      	
-		      </div>				
+			<div>
+				<div id="servImg">
+					<h2 className="center imgTitle">Tax services</h2>
+					<nav className="servNav nav-wrapper red darken-3">
+						<div className="breadWrapper container">
+					      <div className="col s12">
+					        <Link to="/" className="breadcrumb">Home</Link>
+					        <Link to="/Bookkeeping" className="breadcrumb">Taxes</Link>
+					      </div>					
+						</div>						
+					</nav>					
+				</div>			
+				<div className="container">
+			      <div className="row">
+			      	<div className="col s12 m8 l8">
+			      		<div>
+				      		<h3>{ this.state.topic.Topic }</h3>
+				      		<p>{ this.state.topic.Desc }</p>		      			
+			      		</div>
+			      	</div>
+			      	<div className="col s12 m8 l8">
+			      		<div>
+			      			{ items }
+			      		</div>
+			      	</div>		      	
+			      </div>							
+				</div>			
 			</div>
 		)
 	}

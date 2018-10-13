@@ -15,10 +15,10 @@ class Home extends Component {
 		cards: [
 			{	
 				img: Bookkeeping, 
-				cardTitle: "Bookkeeping", 
+				cardTitle: "Accounting", 
 				text: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
 				id:1,
-				link:'/Bookkeeping'
+				link:'/Accounting'
 			},
 			{
 				img: Consulting,

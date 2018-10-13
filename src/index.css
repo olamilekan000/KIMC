@@ -51,6 +51,69 @@ img{
   padding: 20px;
 }
 
+.imgTitle{
+  background-image: url('./imgs/BackTax.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  margin: 0;
+}
+
+.imgTitle{
+  padding-top: 100px;
+
+}
+
+
+.imgTitleAcct{
+  background-image: url('./imgs/BackAccting.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  margin: 0;
+}
+
+.imgTitleAcct{
+  padding-top: 100px;
+
+}
+
+.imgTitleAbt{
+  background-image: url('./imgs/BackAccting.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  margin: 0; 
+}
+
+.imgTitleAbt{
+  padding-top: 100px;
+}
+
+nav .servNav{
+  margin-top: 0px !important;
+}
+
+.active{
+  background-color: #fff;
+  color: #C42828;
+  font-weight: 5px solid;
+}
+
+.formCard{
+  margin-top: 120px;
+}
+
+#servImg img{
+  height: 350px;
+  width: 100%;
+  margin-bottom: 0 !important;
+}
+
+#servImg {
+  margin-bottom: 0;
+}
+
 /*.breadWrapper{
   background-color: red;
   padding: 10px;
@@ -84,9 +147,21 @@ img{
   margin: 20px;
 }
 
+#ppleImg{
+  padding: 30px;
+}
+
 @media only screen and (max-width: 768px){
   #fbPic{
     width: 345px;
     height: 196px;
+  }
+
+  #ppleImg{
+  }
+
+  #ppleImg img{
+    /*width: 345px;*/
+    height: 200px;
   }
 }

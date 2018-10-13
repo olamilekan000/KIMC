@@ -9,7 +9,9 @@ import About from './Components/About';
 import Services from './Components/Services'
 
 import Taxes from './Components/services/taxes'
-import Bookkepping from './Components/services/Bookkepping'
+import Accounting from './Components/services/Bookkepping'
+
+import Login from './Components/Auth/Login'
 
 class App extends Component {
   render() {
@@ -20,11 +22,13 @@ class App extends Component {
           <main>
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route path="/home" component={Home} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
               <Route path="/services" component={Services} /> 
               <Route path="/Taxes" component={Taxes} />
-              <Route path="/Bookkeeping" component={Bookkepping} />          
+              <Route path="/Accounting" component={Accounting} />
+              <Route path="/signIn" component={Login} />                        
             </Switch>
           </main>
           <Footer />        
