@@ -3,6 +3,7 @@ import Welcome from './welcome';
 import AutoPlay from './slider';
 import Card from './card';
 import FinCoy from './FinCoy';
+import MidNav from './MidNav';
 
 import Bookkeeping from '../imgs/Bookkeeping.jpg'
 import Consulting from '../imgs/Consulting.jpg'
@@ -48,12 +49,19 @@ class Home extends Component {
 			      Efficiently whiteboard robust meta-services whereas stand-alone synergy. Enthusiastically engage premier supply chains after intuitive testing procedures. 
 			      Conveniently parallel task robust imperatives through corporate customer service.`,
 			img: fbpple
-		}
+		},
+		midNavData: {
+				title1: "",
+				title2: "",
+				link1: "",
+				link2: ""
+			}		
 	}
 	render(){
 		return (
 		    <div className="center">
 		    	<AutoPlay />
+		    	<MidNav midNavData={this.state.midNavData} />
 		    	<div className="welcome">
 		    		<Welcome />
 		    		<Card card={ this.state.cards }/>

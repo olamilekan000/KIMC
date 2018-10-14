@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { Link } from 'react-router-dom';
 import PPLE from '../imgs/about-us-block.jpg'
+import MidNav from './MidNav';
 
 class About extends Component{
 	state = {
@@ -31,7 +32,14 @@ class About extends Component{
 					deciding on a company structure. Let us help you make an informed decision and save you money in the long run. Contact us if you have any questions`,
 				id: 2	
 			}
-		]
+		],
+		midNavData: {
+				title1: "Home",
+				title2: "About Us",
+				link1: "/",
+				link2: "/About"
+			}
+		
 	}
 
 	render(){
@@ -40,14 +48,7 @@ class About extends Component{
 			<div>
 				<div id="servImg">
 					<h2 className="center imgTitleAbt">About Us</h2>
-					<nav className="servNav nav-wrapper red darken-3">
-						<div className="breadWrapper container">
-					      <div className="col s12">
-					        <Link to="/" className="breadcrumb">Home</Link>
-					        <Link to="/Bookkeeping" className="breadcrumb">About Us</Link>
-					      </div>					
-						</div>						
-					</nav>					
+					<MidNav midNavData={this.state.midNavData} />
 				</div>			
 				<div className="container">
 			      <div className="row">

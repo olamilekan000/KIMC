@@ -21,7 +21,7 @@ const NavBar = () => {
 				    <li><NavLink to="/services">Services</NavLink></li>
 				    <li><NavLink to="/contact">Contact</NavLink></li>
 				    <li><NavLink to="/Articles">Articles</NavLink></li>
-				    <li><NavLink className="dropdown-trigger" to="/Articles" data-target="dropdown1">Press & News<i className="material-icons right">arrow_drop_down</i></NavLink></li>
+				    <li><NavLink className="dropdown-trigger" to="#" data-target="dropdown1">Press & News<i className="material-icons right">arrow_drop_down</i></NavLink></li>
 				  </ul>
 				</div>
 			</div>	    

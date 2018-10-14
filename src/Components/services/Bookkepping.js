@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import BackTax from '../../imgs/BackTax.jpg'
+import MidNav from '../MidNav';
 
 class Accounting extends Component{
 	state = {
@@ -30,7 +31,13 @@ class Accounting extends Component{
 					deciding on a company structure. Let us help you make an informed decision and save you money in the long run. Contact us if you have any questions`,
 				id: 2	
 			}
-		]
+		],
+		midNavData: {
+				title1: "Home",
+				title2: "Accounting",
+				link1: "/",
+				link2: "/Accounting"
+			}
 	}
 
 	render(){
@@ -49,14 +56,7 @@ class Accounting extends Component{
 			<div>
 				<div id="servImg">
 					<h2 className="center imgTitleAcct">Accounting</h2>
-					<nav className="servNav nav-wrapper red darken-3">
-						<div className="breadWrapper container">
-					      <div className="col s12">
-					        <Link to="/" className="breadcrumb">Home</Link>
-					        <Link to="/Bookkeeping" className="breadcrumb">Accounting</Link>
-					      </div>					
-						</div>						
-					</nav>					
+					<MidNav midNavData={this.state.midNavData} />			
 				</div>			
 				<div className="container">
 			      <div className="row">
