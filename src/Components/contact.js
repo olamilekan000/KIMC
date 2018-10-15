@@ -30,7 +30,7 @@ class Contact extends Component{
 		return (
 			<div>
 				<div id="servImg">
-					<h2 className="center imgTitleCntct">Contact Us</h2>
+					<div className="imgTitleCntct"></div>
 					<nav className="servNav nav-wrapper red darken-3">
 						<div className="breadWrapper container">
 					      <div className="col s12">
