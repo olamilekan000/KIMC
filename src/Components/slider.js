@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Slider from 'react-animated-slider';
+import Slider from 'react-animated-slider'; 
 import '../../node_modules/react-animated-slider/build/horizontal.css';
 import '../../node_modules/react-animated-slider/build/horizontal.css';
 
@@ -8,23 +8,23 @@ class AutoPlay extends Component {
 	state = {
 		content: [
 			{
-				title: 'Vulputate Mollis Ultricies Fermentum Parturient',
+				title: 'Vulputate Mollis',
 				description:
 				'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.',
 				button: 'Read More',
 				image: 'http://www.masteracct.com/assets/img/sliders/2.jpg'
 			},
 			{
-				title: 'Tortor Dapibus Commodo Aenean Quam',
+				title: 'Tortor Dapibus',
 				description:
-				'Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.',
+				'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.',
 				button: 'Discover',
 				image: 'http://www.masteracct.com/assets/img/sliders/5.jpg',
 			},
 			{
 				title: 'Phasellus volutpat metus',
 				description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.',
+				'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.',
 				button: 'Buy now',
 				image: 'http://www.masteracct.com/assets/img/sliders/Slider_Payroll_Services.jpg'
 			}
@@ -46,10 +46,12 @@ class AutoPlay extends Component {
 							className="slider-content"
 							style={{ background: `url('${item.image}') no-repeat center center` }}
 						>
-							<div className="container contents">
+							<div className="contents slide inner">
 								<h1>{item.title}</h1>
-								<p>{item.description}</p>
-								<button className="btn-large red darken-3">{item.button}</button>
+								<div className="sliderContent">
+									<p>{item.description}</p>
+									<button className="btn-large red darken-3">{item.button}</button>									
+								</div>
 							</div>
 						</div>
 					))}
