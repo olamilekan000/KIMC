@@ -48,7 +48,7 @@ class Taxes extends Component{
 		return (
 			<div>
 				<div id="servImg">
-					<h2 className="center imgTitle">Tax services</h2>
+					<div className="imgTitle"></div>
 					<nav className="servNav nav-wrapper red darken-3">
 						<div className="breadWrapper container">
 					      <div className="col s12">

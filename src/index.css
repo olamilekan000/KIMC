@@ -64,6 +64,26 @@ img{
   background-position: center center;
   height: 300px;
   margin: 0;
+  color: #fff;   
+}
+
+.imgTitle::before{
+  content: 'Taxation';
+  position: absolute;
+  height: 300px;
+  text-align: center;
+  padding-top: 150px;
+  font-size: 70px;   
+  display: block;         
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  width: 100% !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 364px;
+
 }
 
 .imgTitle{
@@ -78,11 +98,29 @@ img{
   background-position: center center;
   height: 300px;
   margin: 0;
+  color: #fff; 
 }
 
 .imgTitleAcct{
   padding-top: 100px;
+}
 
+.imgTitleAcct::before{
+  content: 'Accounting';
+  position: absolute;
+  height: 300px;
+  text-align: center;
+  padding-top: 150px;
+  font-size: 70px;   
+  display: block;         
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  width: 100% !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 365px;
 }
 
 .imgTitleAbt{
@@ -90,7 +128,26 @@ img{
   background-size: cover;
   background-position: center center;
   height: 300px;
-  margin: 0; 
+  margin: 0;
+  color: #fff;
+}
+
+.imgTitleAbt::before{
+  content: 'About Us';
+  position: absolute;
+  height: 300px;
+  text-align: center;
+  padding-top: 150px;
+  font-size: 70px;   
+  display: block;         
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  width: 100% !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 365px;
 }
 
 .imgTitleAbt{
@@ -183,4 +240,60 @@ nav .servNav{
     /*width: 345px;*/
     height: 200px;
   }
+
+  .imgTitle::before{
+    content: 'Taxation';
+    position: absolute;
+    height: 300px;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 40px;   
+    display: block;         
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    width: 100% !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 356px;
+
+  }
+
+  .imgTitleAcct::before{
+    content: 'Accounting';
+    position: absolute;
+    height: 300px;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 40px;   
+    display: block;         
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    width: 100% !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 356px;
+  }
+
+  .imgTitleAbt::before{
+    content: 'About Us';
+    position: absolute;
+    height: 300px;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 40px;   
+    display: block;         
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    width: 100% !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 356px;
+  }  
+
 }

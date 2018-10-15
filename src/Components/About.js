@@ -47,7 +47,7 @@ class About extends Component{
 		return (
 			<div>
 				<div id="servImg">
-					<h2 className="center imgTitleAbt">About Us</h2>
+					<div className="imgTitleAbt"></div>
 					<MidNav midNavData={this.state.midNavData} />
 				</div>			
 				<div className="container">

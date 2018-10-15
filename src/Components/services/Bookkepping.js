@@ -55,7 +55,7 @@ class Accounting extends Component{
 		return (
 			<div>
 				<div id="servImg">
-					<h2 className="center imgTitleAcct">Accounting</h2>
+					<div className="imgTitleAcct"></div>			
 					<MidNav midNavData={this.state.midNavData} />			
 				</div>			
 				<div className="container">
