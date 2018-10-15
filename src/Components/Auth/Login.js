@@ -21,6 +21,7 @@ class Login extends Component{
 		return (
 			<div>
 				<div className="container">
+					<div className="center"><h2>Log in</h2></div>
 					<div className="card formCard">
 						<div className="card-content">
 							<form onSubmit={this.signIn}>

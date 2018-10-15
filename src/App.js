@@ -6,12 +6,13 @@ import Footer from './Components/footer';
 import Contact from './Components/contact';
 import Home from './Components/Home';
 import About from './Components/About';
-import Services from './Components/Services'
+import Services from './Components/Services';
 
-import Taxes from './Components/services/taxes'
-import Accounting from './Components/services/Bookkepping'
+import Taxes from './Components/services/taxes';
+import Accounting from './Components/services/Bookkepping';
 
-import Login from './Components/Auth/Login'
+import Login from './Components/Auth/Login';
+import CreateArticle from './Components/Auth/CreateArticle';
 
 class App extends Component {
   render() {
@@ -28,7 +29,8 @@ class App extends Component {
               <Route path="/services" component={Services} /> 
               <Route path="/Taxes" component={Taxes} />
               <Route path="/Accounting" component={Accounting} />
-              <Route path="/signIn" component={Login} />                        
+              <Route path="/signIn" component={Login} />
+              <Route path="/Create" component={CreateArticle} />                         
             </Switch>
           </main>
           <Footer />        

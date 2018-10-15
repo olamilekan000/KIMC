@@ -41,7 +41,6 @@ class Accounting extends Component{
 	}
 
 	render(){
-		console.log(this.state.data)
 		const items = this.state.data.map( item => {
 			return(
 				<div className="card" key={ item.id }>
@@ -54,7 +53,7 @@ class Accounting extends Component{
 		})
 		return (
 			<div>
-				<div id="servImg">
+				<div>
 					<div className="imgTitleAcct"></div>			
 					<MidNav midNavData={this.state.midNavData} />			
 				</div>			
