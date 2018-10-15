@@ -8,7 +8,7 @@ class About extends Component{
 	state = {
 
 		topic:{
-			Topic: 'Accounting',
+			Topic: 'Who we are',
 			Desc: `We are your income tax people. Not only can we help you in the preparation and filing of a variety of tax returns and forms,
 					but we have the know-how and experience to ensure you keep the most money in your pocket. Contact us today for a quote`
 		},
