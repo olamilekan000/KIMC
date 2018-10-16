@@ -12,10 +12,10 @@ const Card = ({card}) => {
 				      <img src={card.img} />
 				    </div>
 				    <div className="card-content">
-				    	<span className="card-title">{card.cardTitle}</span>
+				    	<span className="card-title bold">{card.cardTitle}</span>
 				    	<p>{ card.text }</p>
 					    <div id="serviceBtn">
-					    	<Link to={ card.link }><button className="btn red darken-3">Read More</button></Link>
+					    	<Link to={ card.link } className="pulse"><button className="btn red darken-3 pulse">Read More</button></Link>
 					    </div>
 				    </div>
 				  </div>

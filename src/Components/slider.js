@@ -50,7 +50,7 @@ class AutoPlay extends Component {
 								<h1>{item.title}</h1>
 								<div className="sliderContent">
 									<p>{item.description}</p>
-									<button className="btn-large red darken-3">{item.button}</button>									
+									<button className="btn-large red darken-3 pulse">{item.button}</button>									
 								</div>
 							</div>
 						</div>

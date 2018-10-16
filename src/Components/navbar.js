@@ -13,7 +13,7 @@ const NavBar = () => {
 			<nav>
 				<div className="nav-wrapper red darken-3">
 					<div className="container">
-					  <a className="brand-logo"><Link to="/"><h3 id="Logo">KIMC</h3></Link></a>
+					  <Link to="/" className="brand-logo"><h3 id="Logo">KIMC</h3></Link>
 					  <a data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
 					  <ul className="right hide-on-med-and-down">
 					    <li><NavLink to="/home">Home</NavLink></li>
