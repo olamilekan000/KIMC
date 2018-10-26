@@ -7,7 +7,7 @@ import MidNav from './MidNav';
 
 import Bookkeeping from '../imgs/Bookkeeping.jpg'
 import Consulting from '../imgs/Consulting.jpg'
-import Statement from '../imgs/Statements.jpg'
+import Training from '../imgs/Statements.jpg'
 import Taxes from '../imgs/Taxes.jpg'
 import fbpple from '../imgs/fbpple.jpg'
 
@@ -19,28 +19,32 @@ class Home extends Component {
 				cardTitle: "Accounting", 
 				text: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
 				id:1,
-				link:'/Accounting'
+				link:'/Accounting',
+				alt:'Bookkeeping'
 			},
 			{
 				img: Consulting,
 			 	cardTitle: "Consulting",
 			 	text: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
 			 	id:2,
-			 	link:'/Consulting' 
+			 	link:'/Consulting',
+			 	alt:'Consulting' 
 			},
 			{
-				img: Statement,
-			 	cardTitle: "Statement",
+				img: Training,
+			 	cardTitle: "Training",
 			 	text: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
 			 	id:3,
-			 	link:'/Statement'
+			 	link:'/Statement',
+			 	alt:'Statement'
 			},
 			{
 				img: Taxes,
 			 	cardTitle: "Taxes",
 			 	text: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
 			 	id:4,
-			 	link:'/Taxes' 
+			 	link:'/Taxes',
+			 	alt:'Taxes' 
 			},
 		],
 		coyDescr:{

@@ -5,7 +5,7 @@ const NavBar = () => {
 	return (
 		<header>
 			<ul id="dropdown1" className="dropdown-content">
-			  <li><NavLink to="/">Careers</NavLink></li>
+			  <li><NavLink to="/Career">Careers</NavLink></li>
 			  <li><NavLink to="/">Bashorun & Co.</NavLink></li>
 			  <li className="divider"></li>
 			  <li><NavLink to="/signIn">Log-in</NavLink></li>

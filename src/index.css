@@ -37,6 +37,10 @@ img{
   min-height: 20%;
 }
 
+polygon{
+  fill: #C62828;
+}
+
 .container{
   width: 90% !important;
 }

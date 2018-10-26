@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import BackTax from '../../imgs/BackTax.jpg'
 import MidNav from '../MidNav';
 
 class Accounting extends Component{
@@ -8,30 +6,8 @@ class Accounting extends Component{
 
 		topic:{
 			Topic: 'Accounting',
-			Desc: `We are your income tax people. Not only can we help you in the preparation and filing of a variety of tax returns and forms,
-					but we have the know-how and experience to ensure you keep the most money in your pocket. Contact us today for a quote`
+			Desc: `Accounting is the language of business. This is because business is concerned with increasing values continuously. In order to increase values, resources must be effectively used to carry out the objectives and goals of the business. For the resources of the business to be effectively utilized, businesses must be able to tract the income, expenses, cash inflow and outflow. This is where accountancy play a significant role in business`
 		},
-		data:[
-			{
-				heading: 'Personal Taxes',
-				PTpara: `Our firm has extensive experience in personal income tax return services. We can help you with basic or more complicated tax returns 
-					including investment income, special tax credits, rental properties, employment expenses and others. We strive to be ahead of the curve when 
-					it comes to technology. We electronically e-file all of our tax returns where possible. In addition, we are an approved Canada Revenue Agency (CRA) 
-					online representative. This means with your permission we can retreive that missing T4 slip. This also allows us to verify
-					that your prior year returns were filed correctly and are not missing any important deductions that could save you money!`,
-				id: 1
-			},
-			{
-				heading:  'Incorporated Businesses',
-				PTpara: `We provide full accounting and tax services for small and medium sized business clients.
-
-					For a more complex incorporated business we provide full tax consulting services. We want all of our clients to reap the distinct benefits of 
-					owning an incorporated business. We perform a full overview of your tax structure to ensure maximum efficiency and minimum taxes. 
-					Maybe you are not incorporated but are considering this in the future. There are many complexities and factors to consider when 
-					deciding on a company structure. Let us help you make an informed decision and save you money in the long run. Contact us if you have any questions`,
-				id: 2	
-			}
-		],
 		midNavData: {
 				title1: "Home",
 				title2: "Accounting",
@@ -41,16 +17,28 @@ class Accounting extends Component{
 	}
 
 	render(){
-		const items = this.state.data.map( item => {
-			return(
-				<div className="card" key={ item.id }>
+		const items = 
+			(
+				<div className="card">
 					<div className="card-content">
-			      		<h4>{ item.heading }</h4>
-			      		<p>{ item.PTpara }</p>	
+						<p>{ this.state.topic.Desc }</p>
+
+			      		<p>Our service is designed to ensure your company maintains timely, accurate financial records and reports. 
+			      		We understand that all companies are different in their accounting needs and have different reporting and transactional 
+			      		requirements which is why our flexible approach allows us to tailor our services to suit the needs of your company, and 
+			      		includes the following:</p>
+			      		<ul>
+			      			<li> 1. Financial Reporting</li>
+			      			<li> 2. Bookkeeping for your accounting documents and records.</li>
+			      			<li> 3. Reconciliation of Accounts for assurance purposes</li>
+			      			<li> 4. Preparation of Management accounts monthly, quarterly, and bi-annually for the purpose of monitoring performance.</li>
+			      			<li> 5. Preparation of annual final accounts and all the accompany schedules for the purpose of statutory audits.</li>
+			      			<li> 6. We serve as reporting accountants in case of floatation of any type of issues.</li>
+			      		</ul>
 					</div>				
 				</div>
 			)
-		})
+
 		return (
 			<div>
 				<div>
@@ -61,8 +49,7 @@ class Accounting extends Component{
 			      <div className="row">
 			      	<div className="col s12 m8 l8">
 			      		<div>
-				      		<h3>{ this.state.topic.Topic }</h3>
-				      		<p>{ this.state.topic.Desc }</p>		      			
+				      		<h3>{ this.state.topic.Topic }</h3>		      			
 			      		</div>
 			      	</div>
 			      	<div className="col s12 m8 l8">
@@ -70,7 +57,38 @@ class Accounting extends Component{
 			      			{ items }
 			      		</div>
 			      	</div>		      	
-			      </div>							
+			      </div>
+
+			      <div className="row">
+			      	<div className="col s12 m8 l8">
+			      		<div>
+				      		<h3>Management Accounts</h3>		      			
+			      		</div>
+			      	</div>
+			      	<div className="col s12 m8 l8">
+			      		<div className="card">
+							<div className="card-content">
+				      			<p>These are set of summarized accounting data such as balance sheet, income statement and cashflow 
+				      			prepared and presented usually monthly, fortnightly, or weekly specifically for the management of the business. 
+				      			The objective of management accounts is to provide timely and key 
+				      			financial and statistical information required by managers to make day to day and short-term decisions.</p><br/>
+				      			<p>The production of regular management accounts allows you to review and analyse the financial performance of your business. The key to making this information 
+				      			valuable is to work with us to use the information to improve the business strategy and processes.</p><br/>
+				      			<p>Management accounts help to make fundamental commercial decisions on issues such as funding, risk minimization and performance improvement.</p><br/>
+
+
+				      			<p>Management accounts will enable you to:</p>
+
+					      		<ul>
+					      			<li> 1. compare your accounts with original budgets or forecasts, with similar period in the past, with your immediate period.</li>
+					      			<li> 2. manage your resources better</li>
+					      			<li> 3. identify trends in your business</li>
+					      			<li> 4. highlight variations in your income or spending which may require attention</li>
+					      		</ul>									
+							</div>		      			
+			      		</div>
+			      	</div>		      	
+			      </div>			      							
 				</div>			
 			</div>
 		)

@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-
-import { Link } from 'react-router-dom';
 import PPLE from '../imgs/about-us-block.jpg'
 import MidNav from './MidNav';
 
@@ -9,8 +7,7 @@ class About extends Component{
 
 		topic:{
 			Topic: 'Who we are',
-			Desc: `We are your income tax people. Not only can we help you in the preparation and filing of a variety of tax returns and forms,
-					but we have the know-how and experience to ensure you keep the most money in your pocket. Contact us today for a quote`
+			Desc: `We provide independent and specialist support in management, financial, accountancy, tax and debt recovery & receivership consulting services to organisations both in public and private sectors of the economy. KIMC provide independent and specialist support in management, financial, accountancy, tax and debt recovery & receivership consulting services to organisations both in public and private sectors of the economy`
 		},
 		data:[
 			{
@@ -55,12 +52,20 @@ class About extends Component{
 			      	<div className="col s12 m6 l6">
 			      		<div>
 				      		<h3>{ this.state.topic.Topic }</h3>
-				      		<p>{ this.state.topic.Desc }</p>		      			
+				      		<p>{ this.state.topic.Desc }</p>
+				      		<p>KIMC provides comprehensive book keeping, accounting, tax, secretarial and consulting services to small and 
+				      		medium companies thereby allowing owners and/or senior management more time to focus on the growth of their business. 
+				      		By providing access to high level accounting services at low cost, clients achieve savings in hard earned money but also
+				      		 soft costs, such as spending less time on bookkeeping and accounting. And as a small business owner you have more
+				      		  important things to do than to keep your own books. We take care of your books for you, so you can get back to the 
+				      		  job of running your business and generating profits</p>
+				      		<p>If you are looking for ways to decrease your overhead and focus on what you do best: building your company, there is answer: KIM consulting limited.</p>
+				      		<p>Our basic accounting management services package is designed to complete your daily financial record keeping tasks as well as your month-end closing tasks, followed by preparation of monthly financial reports and analysis of your business</p>		      			
 			      		</div>
 			      	</div>
 			      	<div className="col s12 m6 l6">
 			      		<div id="ppleImg">
-			      			<img src={ PPLE } />
+			      			<img src={ PPLE }  alt="pics"/>
 			      		</div>
 			      	</div>		      	
 			      </div>							

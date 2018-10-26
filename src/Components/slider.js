@@ -8,21 +8,21 @@ class AutoPlay extends Component {
 	state = {
 		content: [
 			{
-				title: 'Vulputate Mollis',
+				title: 'Have a meet with KIMC',
 				description:
-				'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.',
+				'Do you have tax or management concerns, We at KIMC provide the best service in the industry. We have excellent staffs who pay attention to the little details.',
 				button: 'Read More',
 				image: 'http://www.masteracct.com/assets/img/sliders/2.jpg'
 			},
 			{
-				title: 'Tortor Dapibus',
+				title: 'Reach your potential faster and with ease.',
 				description:
-				'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.',
+				'Our focus on excellence and our clients has led to many accolades',
 				button: 'Discover',
 				image: 'http://www.masteracct.com/assets/img/sliders/5.jpg',
 			},
 			{
-				title: 'Phasellus volutpat metus',
+				title: 'We truly Listen',
 				description:
 				'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.',
 				button: 'Buy now',

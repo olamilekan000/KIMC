@@ -7,12 +7,16 @@ import Contact from './Components/contact';
 import Home from './Components/Home';
 import About from './Components/About';
 import Services from './Components/Services';
+import Articles from './Components/Articles';
+import Career from './Components/careers';
 
 import Taxes from './Components/services/taxes';
 import Accounting from './Components/services/Bookkepping';
+import Audit from './Components/services/Audit';
 
 import Login from './Components/Auth/Login';
 import CreateArticle from './Components/Auth/CreateArticle';
+import SingleArticle from './Components/Auth/SingleArticle';
 
 class App extends Component {
   render() {
@@ -30,7 +34,11 @@ class App extends Component {
               <Route path="/Taxes" component={Taxes} />
               <Route path="/Accounting" component={Accounting} />
               <Route path="/signIn" component={Login} />
-              <Route path="/Create" component={CreateArticle} />                         
+              <Route path="/Create" component={CreateArticle} />
+              <Route path="/Articles" component={Articles} />
+              <Route path="/Audit" component={Audit} />
+              <Route path="/Career" component={Career} />  
+              <Route exact path="/article/:id" component={SingleArticle} />                         
             </Switch>
           </main>
           <Footer />        

@@ -12,7 +12,7 @@ const Fbpple = ({coyDescr}) => {
 			  </div>
 			  <div className="col s12 m7 l7">
 			    <div>
-			      <img src={ coyDescr.img } id="fbPic"/>
+			      <img src={ coyDescr.img } id="fbPic" alt="pictures"/>
 			    </div>
 			  </div>	    					  	    		
 	    	</div>   	

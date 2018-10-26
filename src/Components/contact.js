@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-
-import { Link } from 'react-router-dom';
 import PPLE from '../imgs/about-us-block.jpg'
+import MidNav from './MidNav';
+import GoogleMap from './map/map'
 
 class Contact extends Component{
 	state = {
@@ -11,7 +11,13 @@ class Contact extends Component{
 			email: null,
 			subject: null,
 			message: null
-		}
+		},
+		midNavData: {
+				title1: "Home",
+				title2: "Contact Us",
+				link1: "/",
+				link2: "/Bookkeeping"
+			}
 	}
 
 	submitEnquiry = e => {
@@ -31,14 +37,7 @@ class Contact extends Component{
 			<div>
 				<div id="servImg">
 					<div className="imgTitleCntct"></div>
-					<nav className="servNav nav-wrapper red darken-3">
-						<div className="breadWrapper container">
-					      <div className="col s12">
-					        <Link to="/" className="breadcrumb">Home</Link>
-					        <Link to="/Bookkeeping" className="breadcrumb">Contact Us</Link>
-					      </div>					
-						</div>						
-					</nav>					
+					<MidNav midNavData={this.state.midNavData}/>				
 				</div>			
 				<div className="container">
 			      <div className="row">
@@ -86,8 +85,8 @@ class Contact extends Component{
 			      		</div>			      		
 			      	</div>
 			      	<div className="col s12 m6 l6">
-			      		<div id="ppleImg">
-			      			<img src={ PPLE } />
+			      		<div style={{width: '100%', height: '500px', marginTop: '100px'}} >
+			      			<GoogleMap />
 			      		</div>
 			      	</div>		      	
 			      </div>			      							
