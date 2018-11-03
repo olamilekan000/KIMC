@@ -61,10 +61,15 @@ class Home extends Component {
 				link2: ""
 			}		
 	}
+
+	changeRoute(){
+		this.props.history.push('/services')
+	}
+
 	render(){
 		return (
 		    <div className="center">
-		    	<AutoPlay />
+		    	<AutoPlay changeRoute={ this.changeRoute} />
 		    	<MidNav midNavData={this.state.midNavData} />
 		    	<div className="welcome">
 		    		<Welcome />

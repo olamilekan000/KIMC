@@ -6,22 +6,22 @@ class Welcome extends Component {
 		slogan: [
 			{
 				font: 'f00c fas fa-check fa-3x',
-				text: 'Team spirit & Communication',
+				text: 'Integrity',
 				id: 1
 			},
 			{
 				font: 'f00c fas fa-check fa-3x',
-				text: 'Excellence',
+				text: 'Respect',
 				id: 2
 			},
 			{
 				font: 'f00c fas fa-check fa-3x',
-				text: 'Respect',
+				text: 'Excellence',
 				id: 3
 			},
 			{
 				font: 'f00c fas fa-check fa-3x',
-				text: 'Integrity',
+				text: 'Team spirit & Communication',
 				id: 4
 			},						
 		]
