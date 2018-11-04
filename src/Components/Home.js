@@ -17,7 +17,7 @@ class Home extends Component {
 			{	
 				img: Bookkeeping, 
 				cardTitle: "Accounting", 
-				text: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
+				text: "KIMC is a professional in Accounting services. We are capable of handling all your accounting needs because we understand what is accounting.",
 				id:1,
 				link:'/Accounting',
 				alt:'Bookkeeping'
@@ -25,23 +25,23 @@ class Home extends Component {
 			{
 				img: Consulting,
 			 	cardTitle: "Consulting",
-			 	text: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
+			 	text: "The key factor to the success of any business or organisation is its people - management. Good management is essential not only at inception of a business but also throughout the changing phases of business life.",
 			 	id:2,
 			 	link:'/Consulting',
 			 	alt:'Consulting' 
 			},
 			{
 				img: Training,
-			 	cardTitle: "Training",
-			 	text: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
+			 	cardTitle: "Audit and Assurance",
+			 	text: "Auditing is defined as an independent examination of the books and account of an organization by a duly qualified person, in which he/she expresses an opinion as to whether the financial statements of an orgainization show a true and fair view and comply with relevant statutory guidelines.",
 			 	id:3,
-			 	link:'/Statement',
+			 	link:'/Audit',
 			 	alt:'Statement'
 			},
 			{
 				img: Taxes,
 			 	cardTitle: "Taxes",
-			 	text: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
+			 	text: "Tax is also defined as a compulsory levy imposed or charged on taxable citizens, companies and firms to enable government obtain the required revenue to finance its activities.",
 			 	id:4,
 			 	link:'/Taxes',
 			 	alt:'Taxes' 

@@ -4,17 +4,18 @@ import axios from 'axios'
 
 class ContactFormComponent extends Component{
 	state = {
-		// info@kimc.com.ng
+		 
 		subject: "",
 		email: "",
 		name: "",
 		message: "",
-		to: "odukoyaonline@gmail.com"
+		to: "info@kimc.com.ng"
 	
 	}
 
 	submitEnquiry = async e => {
 		e.preventDefault();
+
 	    let data = JSON.stringify(this.state)
 		var config = { 
 			headers: { 
@@ -24,8 +25,8 @@ class ContactFormComponent extends Component{
 				'Access-Control-Allow-Origin': '*'
 			} 
 		};		
+
 		let response = await axios.post('https://www.kimc.com.ng/api/sendmail.php', data, config)
-		console.log(this.state)
 		console.log(response)
 		this.setState({
 			subject: "",

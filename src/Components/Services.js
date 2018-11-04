@@ -22,7 +22,7 @@ class Services extends Component{
 			},
 			{	
 				id:2,
-				link:'/',
+				link:'/Taxes',
 				alt:'',				
 				img:'http://www.habileconsulting.com/wp-content/uploads/2016/01/service3.jpg',
 				cardTitle:'Tax Advisory Services',

@@ -9,7 +9,7 @@ class AutoPlay extends Component {
 	state = {
 		content: [
 			{
-				title: 'Have a meet with KIMC',
+				title: 'Have a meet with Us!',
 				description:
 				'Do you have tax or management concerns, We at KIMC provide the best service in the industry. We have excellent staffs who pay attention to the little details.',
 				button: 'Discover',

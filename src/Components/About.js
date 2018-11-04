@@ -7,7 +7,7 @@ class About extends Component{
 
 		topic:{
 			Topic: 'Who we are',
-			Desc: `We provide independent and specialist support in management, financial, accountancy, tax and debt recovery & receivership consulting services to organisations both in public and private sectors of the economy. KIMC provide independent and specialist support in management, financial, accountancy, tax and debt recovery & receivership consulting services to organisations both in public and private sectors of the economy`
+			Desc: `KIMC is one of the leading medium sized professional Chartered Accounting & Tax Consulting firm providing first-class auditing, advisory, taxation and consulting services in Nigeria. We provide independent and specialist support in management, financial, accountancy, tax and debt recovery & receivership consulting services to organisations both in public and private sectors of the economy. KIMC provide independent and specialist support in management, financial, accountancy, tax and debt recovery & receivership consulting services to organisations both in public and private sectors of the economy`
 		},
 		data:[
 			{

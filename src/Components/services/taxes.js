@@ -28,6 +28,29 @@ class Taxes extends Component{
 					Maybe you are not incorporated but are considering this in the future. There are many complexities and factors to consider when 
 					deciding on a company structure. Let us help you make an informed decision and save you money in the long run. Contact us if you have any questions`,
 				id: 2	
+			},
+			{
+				heading:  'Corporate Taxation',
+				PTpara: `We handle the tax matters of our clients and ensure that they pay adequate tax in relation to their profit as much as the existing tax laws permit (Tax planning).
+				
+				Corporation tax involves not only dealing with the issues of self assessment compliance but also effective planning to improve future profits for the business. Our corporation tax services are tailored to suit your company and include:
+
+				Dealing with corporation tax returns and computations, 
+				Advice on the most effective structure for a business or group, 
+				Process Tax Clearance Certificate for our clients, 
+				We advise our client on all statutory tax deductions at source and ensure that all these deductions are properly accounted for.
+
+				`,
+				id: 3	
+			},
+			{
+				heading:  'Value Added Taxation',
+				PTpara: `The Nigerian Value Added Taxation Law legislation can be complex and enormous particularly for smaller businesses. We at KIMC will remit VAT deductions monthly , file VAT returns monthly, and follow up. 
+				We will attend to VAT Inspectors from Federal Inland Revenue Service (VAT division). We will process VAT Inspection clearance certificate annually.
+				We will attend to Tax Auditors from the Federal Inland Revenue in respect of Value Added Tax yearly.
+				We will carry out an inspection of your tax records on a continuous basis and advise you on area of errors and omissions, especially on Value Added Tax
+				`,
+				id: 4	
 			}
 		],
 		midNavData: {
