@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MidNav from './MidNav';
 import ServCard from './servicesCard';
+import Training from '../imgs/Statements.jpg'
 
 class Services extends Component{
 	state = {
@@ -38,7 +39,7 @@ class Services extends Component{
 			},
 			{	
 				id:4,
-				link:'/',
+				link:'#',
 				alt:'',				
 				img:'http://www.habileconsulting.com/wp-content/uploads/2016/02/service8.jpg',
 				cardTitle:'Planning Corporate & Finacial Advisory Services',
@@ -56,7 +57,7 @@ class Services extends Component{
 				id:5,
 				link:'/Audit',
 				alt:'',				
-				img:'http://www.habileconsulting.com/wp-content/uploads/2016/02/service2.jpg',
+				img: Training,
 				cardTitle:'Audit and Assurance',
 				text:'Retirement planning involves evaluating your current financial standing and creating an accumulation strategy helping to ensure a desired retirement lifestyle.'
 			}																

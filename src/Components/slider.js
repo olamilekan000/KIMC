@@ -25,7 +25,7 @@ class AutoPlay extends Component {
 			{
 				title: 'We truly listen.',
 				description:
-				'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.',
+				'We are committed to building a stable and leading firm through the dedication of our highly qualified staff, responsive, innovative and well motivated employees who seek continuous improvement in team work and timely delivery of total quality service to our clientele.',
 				button: 'Discover',
 				image: 'http://www.masteracct.com/assets/img/sliders/Slider_Payroll_Services.jpg'
 			}
