@@ -48,7 +48,7 @@ class AutoPlay extends Component {
 							style={{ background: `url('${item.image}') no-repeat center center` }}
 						>
 							<div className="contents slide inner">
-								<h1>{item.title}</h1>
+								<h1 className='itemTitle'>{item.title}</h1>
 								<div className="sliderContent">
 									<p>{item.description}</p>
 									<Link to='/services'><button className="btn-large red darken-3 pulse">{item.button}</button></Link>									
