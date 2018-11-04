@@ -13,6 +13,7 @@ import Career from './Components/careers';
 import Taxes from './Components/services/taxes';
 import Accounting from './Components/services/Bookkepping';
 import Audit from './Components/services/Audit';
+import MgtConsulting from './Components/services/MgtCnslt';
 
 import Login from './Components/Auth/Login';
 import CreateArticle from './Components/Auth/CreateArticle';
@@ -38,7 +39,8 @@ class App extends Component {
               <Route path="/Articles" component={Articles} />
               <Route path="/Audit" component={Audit} />
               <Route path="/Career" component={Career} />  
-              <Route exact path="/article/:id" component={SingleArticle} />                         
+              <Route path="/Consulting" component={MgtConsulting} />                       
+              <Route exact path="/article/:id" component={SingleArticle} />
             </Switch>
           </main>
           <Footer />        

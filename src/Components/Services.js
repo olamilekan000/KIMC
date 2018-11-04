@@ -30,8 +30,8 @@ class Services extends Component{
 			},
 			{	
 				id:3,
-				link:'',
-				alt:'/',		
+				link:'/Audit',
+				alt:'',		
 				img:'http://www.habileconsulting.com/wp-content/uploads/2016/02/service4.jpg',
 				cardTitle:'Internal Audit & Control Services',
 				text:'Review of Control Environment Risk Assessment Fixing the Control Activities Information and Communication Monitoring and continuous reporting to management'
@@ -46,7 +46,7 @@ class Services extends Component{
 			},
 			{	
 				id:5,
-				link:'/',
+				link:'/Consulting',
 				alt:'',				
 				img:'http://www.habileconsulting.com/wp-content/uploads/2016/02/service2.jpg',
 				cardTitle:'Management Consultancy Services',

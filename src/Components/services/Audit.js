@@ -50,7 +50,7 @@ class Audit extends Component{
 		return (
 			<div>
 				<div>
-					<div className="imgTitleAcct"></div>			
+					<div className="imgTitleAudit"></div>			
 					<MidNav midNavData={this.state.midNavData} />			
 				</div>			
 				<div className="container">

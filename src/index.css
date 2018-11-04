@@ -127,6 +127,68 @@ polygon{
   height: 314px;
 }
 
+.imgTitleMgt{
+  background-image: url('./imgs/BackAccting.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  margin: 0;
+  color: #fff; 
+}
+
+.imgTitleMgt{
+  padding-top: 100px;
+}
+
+.imgTitleMgt::before{
+  content: 'Consultancy Services';
+  position: absolute;
+  height: 300px;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 70px;   
+  display: block;         
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  width: 100% !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 50px;
+  height: 314px;
+}
+
+.imgTitleAudit{
+  background-image: url('./imgs/BackAccting.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  margin: 0;
+  color: #fff; 
+}
+
+.imgTitleAudit{
+  padding-top: 100px;
+}
+
+.imgTitleAudit::before{
+  content: 'Audit & Assurance Services';
+  position: absolute;
+  height: 300px;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 70px;   
+  display: block;         
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  width: 100% !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 50px;
+  height: 314px;
+}
+
 .imgTitleAbt{
   background-image: url('./imgs/BackAccting.jpg');
   background-size: cover;
@@ -371,7 +433,67 @@ nav .servNav{
     right: 0;
     top: 0;
     height: 356px;   
-  }  
+  } 
 
+  .imgTitleMgt{
+    background-image: url('./imgs/BackAccting.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    margin: 0;
+    color: #fff; 
+  }
 
+  .imgTitleMgt{
+    padding-top: 100px;
+  }
+
+  .imgTitleMgt::before{
+    content: 'Consultancy Services';
+    position: absolute;
+    height: 300px;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 70px;   
+    display: block;         
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    width: 100% !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 50px;
+    height: 314px;
+  }   
+
+  .imgTitleAudit{
+    background-image: url('./imgs/BackAccting.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    margin: 0;
+    color: #fff; 
+  }
+
+  .imgTitleAudit{
+    padding-top: 100px;
+  }
+
+  .imgTitleAudit::before{
+    content: 'Audit & Assurance Services';
+    position: absolute;
+    height: 300px;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 70px;   
+    display: block;         
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    width: 100% !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 50px;
+    height: 314px;
+  }
 }
