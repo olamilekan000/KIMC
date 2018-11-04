@@ -41,6 +41,11 @@ polygon{
   fill: #C62828;
 }
 
+i{
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
 .container{
   width: 90% !important;
 }

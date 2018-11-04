@@ -27,7 +27,7 @@ class ContactFormComponent extends Component{
 		};		
 
 		let response = await axios.post('https://www.kimc.com.ng/api/sendmail.php', data, config)
-		console.log(response)
+		
 		this.setState({
 			subject: "",
 			email: "",
