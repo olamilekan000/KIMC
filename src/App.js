@@ -18,6 +18,7 @@ import MgtConsulting from './Components/services/MgtCnslt';
 import Login from './Components/Auth/Login';
 import CreateArticle from './Components/Auth/CreateArticle';
 import SingleArticle from './Components/Auth/SingleArticle';
+import SignUp from './Components/Auth/SignUp'
 
 class App extends Component {
   render() {
@@ -39,7 +40,8 @@ class App extends Component {
               <Route path="/Articles" component={Articles} />
               <Route path="/Audit" component={Audit} />
               <Route path="/Career" component={Career} />  
-              <Route path="/Consulting" component={MgtConsulting} />                       
+              <Route path="/Consulting" component={MgtConsulting} />
+              <Route path="/SignUp" component={ SignUp } />                    
               <Route exact path="/article/:id" component={SingleArticle} />
             </Switch>
           </main>

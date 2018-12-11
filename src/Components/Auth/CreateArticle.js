@@ -1,27 +1,35 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
+import createArticle from '../../store/actions/createArticle'
+import { Redirect } from 'react-router-dom'
 
 class CreateArticle extends Component {
 	state = {
 		title:null,
 		content: null,
-		date: null,
-		time: null
+		date: null
 	}
 
 	Create = e => {
 		e.preventDefault();
 		console.log(this.state)
+		this.props.createArticle(this.state)
+		this.props.history.push('/Articles')
 	}
 
 	handleChange = e => {
 		this.setState({
 			[e.target.id]: e.target.value,
-			date: Math.random(),
-			time: Math.random()
+			date: new Date().toDateString()
+			// time: Math.random()
 		})
 	}
 
 	render(){
+		
+		const { auth } = this.props
+		if(!auth.uid){ return <Redirect to='/SignIn' /> }
+
 		return (
 			<div className="container">
 				<div className="center"><h2>Create Article</h2></div>
@@ -52,4 +60,17 @@ class CreateArticle extends Component {
 	}
 }
 
-export default CreateArticle
+const mapStateToProps = (state) => {
+	return {
+
+		auth: state.firebase.auth
+	}
+}
+
+const mapDispatchToProps = (dispatch) => {
+	return {
+		createArticle : (project) => { dispatch(createArticle(project)) }
+	}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(CreateArticle)

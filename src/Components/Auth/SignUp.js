@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
-import { SignIn } from '../../store/actions/SIgnInAuth'
-import { Link } from 'react-router-dom'
 import { Redirect } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { SignUpUser } from '../../store/actions/SIgnInAuth'
 
-class Login extends Component{
+class SignUp extends Component{
 	state ={
 		email: null,
 		password: null
@@ -16,25 +15,23 @@ class Login extends Component{
 		})
 	}
 
-	signIn = e => {
+	signUp = e => {
 		e.preventDefault();
-		this.props.signIn(this.state )
+		this.props.SignUpUser(this.state);
+		this.props.history.push('/SignIn')
 	}
 
 	render(){
-
-		const { auth } = this.props
-		if(auth.uid){ return <Redirect to='/Create' /> }
-
-		const { authError } = this.props
+		const { auth, authError } = this.props
+		if(!auth.uid){ return <Redirect to='/SignIn' /> }
 
 		return (
 			<div>
 				<div className="container">
-					<div className="center"><h2>Log in</h2></div>
+					<div className="center"><h2>Sign Up</h2></div>
 					<div className="card formCard">
 						<div className="card-content">
-							<form onSubmit={this.signIn}>
+							<form onSubmit={this.signUp}>
 								<div className="row">
 									<div className="input-field col s12">
 										<input id="email" type="email" className="validate" onChange={ this.handleChange }/>
@@ -49,10 +46,10 @@ class Login extends Component{
 						      	</div>
 								<div className="row">
 							        <div className="col s12">
-										<button className="btn red darken-3">Sign - In</button>
+										<button className="btn red darken-3">Sign - Up</button>
 										<div className='red-text center'>
 											{ authError ? <p>{ authError }</p>: null } 
-										</div>
+										</div>										
 							        </div>
 						      	</div>						      	
 							</form>
@@ -66,15 +63,15 @@ class Login extends Component{
 
 const mapStateToProps = (state) => {
 	return {
-		authError: state.auth.authError,
-		auth: state.firebase.auth
+		auth: state.firebase.auth,
+		authError: state.auth.authError
 	}
 }
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		signIn: (credentials) => { dispatch( SignIn(credentials) ) }
+		SignUpUser: (credentials) => { dispatch( SignUpUser(credentials) ) }
 	}
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login) 
+export default connect(mapStateToProps, mapDispatchToProps)(SignUp) 
