@@ -12,7 +12,6 @@ class CreateArticle extends Component {
 
 	Create = e => {
 		e.preventDefault();
-		console.log(this.state)
 		this.props.createArticle(this.state)
 		this.props.history.push('/Articles')
 	}

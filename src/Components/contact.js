@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ContactFormComponent from './contactForm'
 import MidNav from './MidNav';
-import GoogleMap from './map/map'
+import MyGoogleMap from './map/map'
 
 class Contact extends Component{
 	state = {
@@ -34,7 +34,7 @@ class Contact extends Component{
 			      	</div>
 			      	<div className="col s12 m6 l6">
 			      		<div style={{width: '100%', height: '500px', marginTop: '100px'}} >
-			      			<GoogleMap />
+			      			<MyGoogleMap />
 			      		</div>
 			      	</div>		      	
 			      </div>			      							

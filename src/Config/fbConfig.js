@@ -1,10 +1,13 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
+require('dotenv').config()
+
+console.log(process.env.API_KEY)
 
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyAhYxp5XGt-r7krFCFC0jCLhSG8y5Y50wc",
+  apiKey: 'AIzaSyAhYxp5XGt-r7krFCFC0jCLhSG8y5Y50wc',
   authDomain: "kimcweb-cfc07.firebaseapp.com",
   databaseURL: "https://kimcweb-cfc07.firebaseio.com",
   projectId: "kimcweb-cfc07",
