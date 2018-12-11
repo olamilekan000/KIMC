@@ -37,14 +37,14 @@ class CreateArticle extends Component {
 							<form onSubmit={ this.Create }>
 								<div className="row">
 									<div className="input-field col s12">
-										<input id="title" type="text" className="validate" onChange={this.handleChange} />
+										<input id="title" type="text" className="validate" onChange={this.handleChange} required />
 										<label htmlFor="title">Title</label>
 									</div>
 								</div>
 								<div className="row">
 									<div className="input-field col s12">
 										<i className="material-icons prefix">mode_edit</i>
-										<textarea id="content" className="materialize-textarea" onChange={this.handleChange} ></textarea>
+										<textarea id="content" className="materialize-textarea" onChange={this.handleChange} required ></textarea>
 										<label htmlFor="title">Content</label>
 									</div>
 								</div>
